@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <img class="logo" src="./assets/images/Logo.svg" alt="logo image">
+            <div class="block">
+                <ul class="navbar">
+                    <li class="navbar_item"><a href="#">Demos</a></li>
+                    <li class="navbar_item"><a href="#">About</a></li>
+                    <li class="navbar_item"><a href="#">Blog</a></li>
+                    <li class="navbar_item"><a href="#">Pages</a></li>
+                    <li class="navbar_item"><a href="#">Contact</a></li>
+                </ul>
+                <div class="login">
+                    <button class="login_btn">Login</button>
+                    <button class="get_started_btn">Get Started Free</button>
+                </div>
+            </div>
+            <div class="burger_menu">
+                <span class="burger_menu_line"></span>
+                <span class="burger_menu_line"></span>
+                <span class="burger_menu_line"></span>
+            </div>
+        </nav>
+        <div class="hero container">
+            <div class="hero_left">
+                <h1 class="hero_title">Start chatting with customers, anytime, anywhere with Apex</h1>
+                <p class="hero_description">Great software that allows you to chat from any place at any time without
+                    any interruption.</p>
+                <button class="hero_btn">Start Chatting Now <img src="./assets/images/arrow.svg" alt="arrow"></button>
+
+                <div class="hero_right_bottom">
+                    <ul>
+                        <li class="hero_right_bottom_img_list">
+                            <img class="circle_img" src="./assets/images/hero_circle_img1.png" alt="">
+                            <img class="circle_img" src="/assets/images/hero_circle_img2.png" alt="">
+                            <img class="circle_img" src="/assets/images/hero_circle_img3.png" alt="">
+                        </li>
+                    </ul>
+                    <div>
+                        <p>2,291</p>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_right">
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="features_section container">
+            <h2 class="features_title">Features for a better experience</h2>
+            <ul class="features_list">
+                <li class="features_list_item">
+                    <img src="./assets/images/video.svg" alt="">
+                    <div>
+                        <h2>Video messaging</h2>
+                        <p>This software is very easy for you to manage. You can use it as you wish.</p>
+                    </div>
+                </li>
+                <li class="features_list_item">
+                    <img src="./assets/images/time.svg" alt="">
+                    <div>
+                        <h2>Save your time</h2>
+                        <p>This software is very easy for you to manage. You can use it as you wish.</p>
+                    </div>
+                </li>
+                <li class="features_list_item">
+                    <img src="./assets/images/secure.svg" alt="">
+                    <div>
+                        <h2>Keep safe & private</h2>
+                        <p>This software is very easy for you to manage. You can use it as you wish.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="meet_costumers container">
+            <img src="./assets/images/meet_costumers.jpg" alt="">
+            <div class="meet_costumers_right">
+                <h2>Meet your customers, with live video chat</h2>
+                <p class="meet_costumers_first_text">Proin faucibus nibh et sagittis a. Lacinia purus ac amet
+                    pellentesque aliquam enim.</p>
+                <p class="meet_costumers_second_text">Get paychecks up to two days early. Get a $20 bonus when you
+                    receive qualifying direct deposits</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+
+    <script>
+
+        const handler = () => {
+            burger.classList.toggle('open')
+        }
+
+        const burger = document.querySelector('.burger_menu')
+        burger.addEventListener('click', handler)
+    </script>
+</body>
+
+</html>
